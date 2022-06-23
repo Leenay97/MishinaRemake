@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+    
+}
+
+.fixed-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    user-select: none;
+    position: fixed;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-image: url('../img/shade.png');
+}
+
+.header__headline {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #4592bfbb, #4592bf76, #4592bf76, #4592bf76, #e3bb6f46, #e3bb6f99);
+    position: relative;
+}
+.header__headline .fixed-container {
+    display: flex;
+
+}
+.header__logo {
+    height: 50px;
+    width: 330px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.header__menu {
+    height: 50px;
+    width: 100%;
+}
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0;
+}
+
+.header__menu-point {
+    width: 130px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    border-left: 2px solid #ffffff44;
+}
+.header__menu-point:last-child {
+    border-right: 2px solid #ffffff44;
+}
+.header__menu-point:hover {
+    background-color: #ffffff33;
+
+}
+.point-name {
+    font-size: 20px;
+    height: 50px;
+    padding: 11px 0;
+    width: 100%;
+}
+
+.submenu__point {
+    color: #00000099;
+    background-color: #00000011;
+    height: 35px;
+    padding: 7px 10px;
+    list-style-type: none;
+    /* border: 1px solid #00000020;
+    border-top: 0; */
+}
+.submenu__point:hover {
+    background-color: #00000005;
+}
+
+.submenu__point a {
+    text-decoration: none;
+}
+
+main {
+    height: auto;
+    background-color: #e3e3e333;
+    margin-top: 50px;
+    /* overflow-y: scroll; */
+}
+
+main .fixed-container {
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    background: linear-gradient(90deg, #4592bfbb, #4592bf76, #4592bf76, #4592bf76, #e3bb6f46, #e3bb6f99);
+        /* position: absolute;
+        bottom: 0; */
+}
+.footer::before {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 100%;
+    margin-top: -8px;
+    background-image: url('../img/shade-up.png');
+}
+
+
+.hidden {
+    display: none;
+}

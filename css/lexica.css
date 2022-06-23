@@ -1,0 +1,80 @@
+* {
+    
+}
+
+.lexica-title {
+    font-size: 26px;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lexica-container {
+    width: 100%;
+    text-align: center;
+}
+
+.lexica-container__title {
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+.lexica-container__unit {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #e3e3e3;
+}
+.lexica-container__unit:last-child {
+    border-bottom: 0;
+}
+
+.lexica-container__table-transcription, .lexica-container__table-translation, .lexica-container__table-word {
+    width: 30%;
+    text-align: left;
+    padding: 5px 10px;
+    line-height: 30px;
+}
+
+.lexica-container__table-transcription {
+    color: #3e3e3eaa;
+}
+
+.lexica-container__table-translation {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.word-number {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 750px) {
+    .lexica-container__unit {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .lexica-container__table-transcription, .lexica-container__table-translation, .lexica-container__table-word {
+        width: 100%;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .word-number {
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        width: 20px;
+        padding: 0;
+        margin-right: 5px;
+        color: #3e3e3eaa;
+    }
+    
+    
+}

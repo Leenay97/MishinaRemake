@@ -1,0 +1,14 @@
+
+/* kosugi-maru-regular - japanese */
+@font-face {
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kosugi-maru-v14-japanese-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/kosugi-maru-v14-japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/kosugi-maru-v14-japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/kosugi-maru-v14-japanese-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/kosugi-maru-v14-japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/kosugi-maru-v14-japanese-regular.svg#KosugiMaru') format('svg'); /* Legacy iOS */
+  }
