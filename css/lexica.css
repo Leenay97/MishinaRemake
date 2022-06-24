@@ -7,6 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .lexica-container {
     width: 100%;
     text-align: center;
@@ -23,7 +24,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-bottom: 1px solid #e3e3e3;
+    /* border-bottom: 1px solid #e3e3e3; */
+}
+.lexica-container__unit:nth-child(2n) {
+    background-color: #4592bf16;
 }
 .lexica-container__unit:last-child {
     border-bottom: 0;
