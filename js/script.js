@@ -22,7 +22,7 @@ let main = document.querySelector('main');
 let scrollBefore = 0;
 let upCounter = 0;
 let downCounter = 0;
-window.addEventListener('mousewheel', (e) => {
+window.addEventListener('scroll', (e) => {
     const scrolled = window.scrollY;
 
     if (scrollBefore < scrolled) {
@@ -53,6 +53,40 @@ window.addEventListener('mousewheel', (e) => {
             duration: 200
         })
             header.classList.remove('header_hidden');
-
     }
+})
+    //for ios
+    window.addEventListener('touchstart', (e) => {
+        const scrolled = window.scrollY;
+    
+        if (scrollBefore < scrolled) {
+            if (scrolled < 100) {
+                header.classList.remove('header_hidden');
+               return; 
+            } 
+            console.log('down');
+            console.log(scrolled);
+            scrollBefore = scrolled;
+            if (header.classList.contains('header_hidden')) return;
+            header.animate([
+                {top: 0},
+                {top: '-50px'}
+            ], {
+                duration: 200
+            })
+            header.classList.add('header_hidden');           
+    
+        }else if (scrollBefore > scrolled){
+            console.log('up');
+            scrollBefore = scrolled;
+            if (!header.classList.contains('header_hidden')) return;
+            header.animate([
+                {top: '-50px'},
+                {top: 0}
+            ], {
+                duration: 200
+            })
+                header.classList.remove('header_hidden');
+    
+        }
 })
