@@ -22,7 +22,7 @@ let main = document.querySelector('main');
 let scrollBefore = 0;
 let upCounter = 0;
 let downCounter = 0;
-window.addEventListener('scroll', (e) => {
+window.addEventListener('mousewheel', (e) => {
     const scrolled = window.scrollY;
 
     if (scrollBefore < scrolled) {
