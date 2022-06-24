@@ -30,7 +30,14 @@ html, body {
     width: 100%;
     user-select: none;
     position: fixed;
+    background-color: white;
+    z-index: 1;
 }
+
+.header_hidden {
+    top: -50px;
+}
+
 
 .header::after {
     content: '';
@@ -91,6 +98,10 @@ html, body {
     height: 50px;
     padding: 11px 0;
     width: 100%;
+}
+
+.submenu {
+    background-color: #ffffff;
 }
 
 .submenu__point {
