@@ -1,0 +1,96 @@
+main .fixed-container {
+    padding: 60px;
+}
+.section {
+    font-size: 26px;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texts-title {
+    font-size: 26px;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text__number {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3e3e3eaa;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text__name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text__subname {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text__field {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    background-color: #f1eecbaa;
+    padding: 20px 0;
+    box-shadow: #3e3e3e33 1px 3px 3px 2px;
+    background-image: url('../img/blocknote-dot.png');
+    background-repeat: repeat-x;
+    background-size: 20px 10px;
+    background-position: 5px 5px;
+}
+
+.schedule__unit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 30px;
+    border-bottom: 1px solid #b7c6bf;
+    color: #023a75;
+}
+.schedule__unit:last-child {
+    border: 0;
+}
+
+.schedule__point {
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+}
+.schedule__time {
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 750px) {
+    main .fixed-container {
+        padding: 20px;
+    }
+    .schedule__point {
+        font-size: 16px;
+    }
+    .schedule__time {
+        font-size: 16px;
+    }
+    .schedule__unit {
+        padding: 0;
+    }
+}
