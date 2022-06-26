@@ -86,6 +86,7 @@ main .fixed-container {
 }
 
 @media screen and (max-width: 750px) {
+    
     main .fixed-container {
         padding: 20px;
     }
