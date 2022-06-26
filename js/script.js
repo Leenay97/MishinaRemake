@@ -20,73 +20,20 @@ let main = document.querySelector('main');
 
 //hide menu on scroll
 let scrollBefore = 0;
-let upCounter = 0;
-let downCounter = 0;
-window.addEventListener('scroll', (e) => {
-    const scrolled = window.scrollY;
+let lastScroll = 0;
+const defaultOffset = 200;
+const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+const containHide = () => header.classList.contains('header_hidden')
 
-    if (scrollBefore < scrolled) {
-        if (scrolled < 100) {
-            header.classList.remove('header_hidden');
-           return; 
-        } 
-        console.log('down');
-        console.log(scrolled);
-        scrollBefore = scrolled;
-        if (header.classList.contains('header_hidden')) return;
-        header.animate([
-            {top: 0},
-            {top: '-50px'}
-        ], {
-            duration: 200
-        })
-        header.classList.add('header_hidden');
-
-    }else{
-        console.log('up');
-        scrollBefore = scrolled;
-        if (!header.classList.contains('header_hidden')) return;
-        header.animate([
-            {top: '-50px'},
-            {top: 0}
-        ], {
-            duration: 200
-        })
-            header.classList.remove('header_hidden');
+window.addEventListener('scroll', () => {
+    if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+        //scroll down
+        header.classList.add('header_hidden')
+        console.log('down')
+    } else if (scrollPosition() < lastScroll && containHide()) {
+        //scroll up
+        header.classList.remove('header_hidden')
     }
-})
-    //for ios
-    window.addEventListener('touchstart', (e) => {
-        const scrolled = window.scrollY;
-    
-        if (scrollBefore < scrolled) {
-            if (scrolled < 100) {
-                header.classList.remove('header_hidden');
-               return; 
-            } 
-            console.log('down');
-            console.log(scrolled);
-            scrollBefore = scrolled;
-            if (header.classList.contains('header_hidden')) return;
-            header.animate([
-                {top: 0},
-                {top: '-50px'}
-            ], {
-                duration: 200
-            })
-            header.classList.add('header_hidden');           
-    
-        }else if (scrollBefore > scrolled){
-            console.log('up');
-            scrollBefore = scrolled;
-            if (!header.classList.contains('header_hidden')) return;
-            header.animate([
-                {top: '-50px'},
-                {top: 0}
-            ], {
-                duration: 200
-            })
-                header.classList.remove('header_hidden');
-    
-        }
+
+    lastScroll = scrollPosition();
 })

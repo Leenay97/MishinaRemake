@@ -32,10 +32,11 @@ html, body {
     position: fixed;
     background-color: white;
     z-index: 1;
+    transition: transform .1s linear;
 }
 
 .header_hidden {
-    top: -50px;
+    transform: translateY(-50px);
 }
 
 
