@@ -3,10 +3,11 @@ main .fixed-container {
 }
 .section {
     font-size: 26px;
-    color: #3e3e3e;
+    color: #4592bfa6;
     text-align: center;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 .bg-blue {
     background-color: #4592bf16;
@@ -17,17 +18,37 @@ main .fixed-container {
 .text {
     margin-bottom: 40px;
 }
-.texts-title {
-    font-size: 22px;
+.lesson-title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.lesson-number {
+    font-size: 26px;
     color: #3e3e3e;
     text-align: center;
-    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: #4592bf76;
+    display: inline-block;
+}
+.lesson-name {
+    font-size: 26px;
+    color: #4592bf76;
+    font-weight: bold;
+    margin-left: 10px;
 }
 .text__number {
     font-size: 22px;
     font-weight: 600;
-    color: #3e3e3eaa;
+    color: #3e3e3e;
     text-align: center;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +56,7 @@ main .fixed-container {
 .text__name {
     font-size: 22px;
     font-weight: 600;
-    color: #3e3e3e;
+    color: #43555dca;
     text-align: center;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,7 +65,7 @@ main .fixed-container {
 .text__subname {
     font-size: 20px;
     font-weight: 600;
-    color: #3e3e3e;
+    color: #023a75;
     text-align: center;
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -76,7 +97,11 @@ main .fixed-container {
 .excercise__point {
     line-height: 30px;
     list-style-type: none;
-    padding: 0 20px;
+    padding: 5px 20px;
+}
+
+.excercise__point:last-child {
+    border-bottom: 2px solid #4592bf26;
 }
 
 .text__field {
@@ -95,7 +120,7 @@ main .fixed-container {
 }
 
 .schedule {
-    background-color: #f1eecbaa;
+    background-color: #f1eecb7c;
     padding: 20px 0;
     box-shadow: #3e3e3e33 1px 3px 3px 2px;
     background-image: url('../img/blocknote-dot.png'), url('../img/tearspot.png');
@@ -125,6 +150,16 @@ main .fixed-container {
     width: 50%;
     text-align: center;
     padding: 0 20px;
+}
+
+.lexica-button {
+    margin: 10px auto;
+    width: 40%;
+    text-align: center;
+    background-color: #4592bf76;
+    color: #ffffff;
+    height: 40px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 750px) { 
@@ -158,5 +193,8 @@ main .fixed-container {
     }
     .schedule__unit {
         padding: 0;
+    }
+    .lexica-button {
+        width: 280px;
     }
 }
