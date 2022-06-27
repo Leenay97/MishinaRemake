@@ -9,13 +9,16 @@ main .fixed-container {
     font-family: Arial, Helvetica, sans-serif;
 }
 .bg-blue {
-    background-color: #4592bf26;
+    background-color: #4592bf16;
 }
 .bg-orange {
-    background-color: #e3bb6f26;
+    background-color: #e3bb6f16;
+}
+.text {
+    margin-bottom: 40px;
 }
 .texts-title {
-    font-size: 26px;
+    font-size: 22px;
     color: #3e3e3e;
     text-align: center;
     margin-bottom: 20px;
@@ -30,15 +33,6 @@ main .fixed-container {
     font-family: Arial, Helvetica, sans-serif;
 }
 .text__name {
-    font-size: 24px;
-    font-weight: 600;
-    color: #3e3e3e;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.text__subname {
     font-size: 22px;
     font-weight: 600;
     color: #3e3e3e;
@@ -47,9 +41,57 @@ main .fixed-container {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.text__subname {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3e3e3e;
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.excercise__block {
+    margin-bottom: 40px;
+}
+
+.excercise__name {
+    font-size: 22px;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.excercise__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.excercise__list {
+    list-style-type: none;
+}
+
+.excercise__point {
+    line-height: 30px;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
 .text__field {
     line-height: 30px;
     margin-bottom: 20px;
+}
+
+.text__paragraph {
+    line-height: 30px;
+    text-indent: 40px;
+    margin-bottom: 5px;
+}
+
+.dialogue__replica {
+    padding: 0 20px 20px 20px;
 }
 
 .schedule {
@@ -88,6 +130,22 @@ main .fixed-container {
 @media screen and (max-width: 750px) { 
     main .fixed-container {
         padding: 20px;
+    }
+    .section {
+        font-size: 22px;
+    }
+    .excercise__point {
+        margin: 0 -20px;
+    }
+
+    .text__number {
+        font-size: 20px;
+    }
+    .text__name {
+        font-size: 20px;
+    }
+    .dialogue__replica {
+        margin: 0 -20px;
     }
     .schedule {
         background-size: 20px 10px, 50px 50px;

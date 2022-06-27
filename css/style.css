@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 html, body {
@@ -51,7 +52,8 @@ html, body {
 .header__headline {
     height: 50px;
     width: 100%;
-    background: linear-gradient(90deg, #4592bfbb, #4592bf76, #4592bf76, #4592bf76, #e3bb6f46, #e3bb6f99);
+    background: linear-gradient(90deg, #4592bfbb, #4592bf76, #4592bf76, #4592bf76);
+    /* , #e3bb6f46, #e3bb6f99 */
     position: relative;
 }
 .header__headline .fixed-container {
@@ -139,7 +141,8 @@ main .fixed-container {
     height: 100px;
     width: 100%;
     flex: 0 0 auto;
-    background: linear-gradient(90deg, #4592bfbb, #4592bf76, #4592bf76, #4592bf76, #e3bb6f46, #e3bb6f99);
+    background: linear-gradient(90deg, #4592bfbb, #4592bf76, #4592bf76, #4592bf76);
+    /* , #e3bb6f46, #e3bb6f99 */
         /* position: absolute;
         bottom: 0; */
 }
