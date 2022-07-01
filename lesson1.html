@@ -14,13 +14,18 @@
 <body>
     <header class="header">
         <div class="header__headline">
-            <div class="fixed-container">
-                <a href="index.html">
-                    <div class="header__logo">
-                        Mishina Reforged
-                    </div>
-                </a>
+            <div class="header__fixed-container fixed-container">
                 <menu class="header__menu">
+                    <div class="menu__button">
+                        <div class="burger__up"></div>
+                        <div class="burger__mid"></div>
+                        <div class="burger__down"></div>
+                    </div>
+                    <a href="index.html">
+                        <div class="header__logo">
+                            Mishina Reforged
+                        </div>
+                    </a>
                     <ul class="header__menu-list">
                         <li class="header__menu-point lessons">
                             <div class="point-name">Уроки</div>
@@ -115,6 +120,11 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="search">
+                        <textarea class="search__text" name="" id="" cols="1" rows="1" draggable="false"
+                            maxlength="2"></textarea>
+                    </div>
+
                 </menu>
             </div>
         </div>
@@ -122,645 +132,689 @@
     <main class="main-lesson">
         <div class="main__fixed-container fixed-container">
             <div class="lesson-title">
-                <div class="lesson-number">1</div>
+                <div class="lesson-number">１</div>
                 <div class="lesson-name">ガイド</div>
             </div>
-            <div class="text">
-                <h1 class="text__number">テキスト 1</h1>
-                <h1 class="text__name">出迎え</h1>
-                <div class="text__field dialogue">
-                    <div class="dialogue__replica bg-blue"><b>イワノフ：</b> 失礼ですが、ガスブロム社との商談に日本からお見えになった方ですか。<br></div>
+            <section id="prelesson-texts">
+                <div class="text">
+                    <h1 class="text__number">テキスト １</h1>
+                    <h1 class="text__name">出迎え</h1>
+                    <div class="text__field dialogue">
+                        <div class="dialogue__replica bg-blue"><b>イワノフ：</b> 失礼ですが、ガスブロム社との商談に日本からお見えになった方ですか。<br></div>
 
-                    <div class="dialogue__replica"><b>岡田：</b> はい、日本の商工会議所代表団の岡田です。<br></div>
+                        <div class="dialogue__replica"><b>岡田：</b> はい、日本の商工会議所代表団の岡田です。<br></div>
 
-                    <div class="dialogue__replica bg-blue"><b>イワノフ：</b>
-                        私、ガスプロムのイワノフです。皆様をお迎えにあがりました。よろしくお願いします。ようこそロシアにお越し下さいました。代表団は全部で4名ですか。<br></div>
+                        <div class="dialogue__replica bg-blue"><b>イワノフ：</b>
+                            私、ガスプロムのイワノフです。皆様をお迎えにあがりました。よろしくお願いします。ようこそロシアにお越し下さいました。代表団は全部で4名ですか。<br></div>
 
-                    <div class="dialogue__replica"><b>岡田：</b> お出迎えありがとうございます。私たちの代表団は4名です。ご紹介いたします。こちらは団長の木村です。<br>
-                    </div>
+                        <div class="dialogue__replica"><b>岡田：</b> お出迎えありがとうございます。私たちの代表団は4名です。ご紹介いたします。こちらは団長の木村です。<br>
+                        </div>
 
-                    <div class="dialogue__replica bg-orange"><b>木村：</b> はじめまして、どうぞよろしく、木村です。<br></div>
+                        <div class="dialogue__replica bg-orange"><b>木村：</b> はじめまして、どうぞよろしく、木村です。<br></div>
 
-                    <div class="dialogue__replica bg-blue"><b>イワノフ：</b>
-                        お名前はかねがね伺っておりました。私どもは皆さんのお越しを楽しみにしておりました。ようこそ。旅はいかがでしたか。お疲れでしょう。<br></div>
+                        <div class="dialogue__replica bg-blue"><b>イワノフ：</b>
+                            お名前はかねがね伺っておりました。私どもは皆さんのお越しを楽しみにしておりました。ようこそ。旅はいかがでしたか。お疲れでしょう。<br></div>
 
-                    <div class="dialogue__replica bg-orange"><b>木村：</b>
-                        いえ、だいじょうぶです。私たちはロシアははじめてですが、このチャンスを得まして喜んでおります。行ってみたい所がたくさんありますが、スケジュールと旅行のコースを教えていただけませんか。<br>
-                    </div>
+                        <div class="dialogue__replica bg-orange"><b>木村：</b>
+                            いえ、だいじょうぶです。私たちはロシアははじめてですが、このチャンスを得まして喜んでおります。行ってみたい所がたくさんありますが、スケジュールと旅行のコースを教えていただけませんか。<br>
+                        </div>
 
-                    <div class="dialogue__replica bg-blue"><b>イワノフ：</b>
-                        日程表のコピーを今すぐお配りしますが、細かい点について特にご希望がおありでしたら後ほどおっしゃって下さい。多少の日程変更は可能です。明日会議の席でまたお目にかかって、スケジュールを打ち合わせいたしましょう。
-                    </div>
-                </div>
-                <h1 class="text__name">見送り</h1>
-                <div class="text__field">
-                    <div class="dialogue__replica bg-blue"><b>イワノフ： </b>
-                        モスクワで何が一番印象に残りましたか。いろいろ行き届かない点があったかと思いますが、ご容赦ください。<br>
-                        日本の皆さんによろしくお伝え下さい。それでは気をつけて。<br></div>
-                    <div class="dialogue__replica bg-orange"><b>木村：
-                        </b>お見送りありがとうございます。おかげさまで私たちのロシア滞在はたいへん楽しく有益なものでした。ぜひ日本へもいらっしゃって下さい。お元気で。<br></div>
-                </div>
-            </div>
-
-            <div class="text">
-                <h1 class="text__number">テキスト 2</h1>
-                <h1 class="text__name">日本商工会議所代表団ロシア滞在日程</h1>
-                <div class="text__field schedule">
-                    <h2 class="text__subname">6月1日（月）</h2>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            シェレメーチエボ空港到着
-                        </div>
-                        <div class="schedule__time">
+                        <div class="dialogue__replica bg-blue"><b>イワノフ：</b>
+                            日程表のコピーを今すぐお配りしますが、細かい点について特にご希望がおありでしたら後ほどおっしゃって下さい。多少の日程変更は可能です。明日会議の席でまたお目にかかって、スケジュールを打ち合わせいたしましょう。
                         </div>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            (JL282便)
-                        </div>
-                        <div class="schedule__time">
-                            11:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            市内へ移動
-                        </div>
-                        <div class="schedule__time">
-                            11:30-12:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            COSMOSホテルにて チェックイン
-                        </div>
-                        <div class="schedule__time">
-                            12:30-13:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            休憩
-                        </div>
-                        <div class="schedule__time">
-                            13:00-14:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            ホテル食堂にて 昼食
-                        </div>
-                        <div class="schedule__time">
-
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            滞在日程打ち合わせ
-                        </div>
-                        <div class="schedule__time">
-                            14:00-15:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            市內觀光
-                        </div>
-                        <div class="schedule__time">
-                            15:00-18:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            日本代表団歓迎レセプション
-                        </div>
-                        <div class="schedule__time">
-
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            (モスクワ市長主催。市役所)
-                        </div>
-                        <div class="schedule__time">
-                            18:00-20:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            自由行動
-                        </div>
-                        <div class="schedule__time">
-                            20:00
-                        </div>
+                    <h1 class="text__name">見送り</h1>
+                    <div class="text__field">
+                        <div class="dialogue__replica bg-blue"><b>イワノフ： </b>
+                            モスクワで何が一番印象に残りましたか。いろいろ行き届かない点があったかと思いますが、ご容赦ください。<br>
+                            日本の皆さんによろしくお伝え下さい。それでは気をつけて。<br></div>
+                        <div class="dialogue__replica bg-orange"><b>木村：
+                            </b>お見送りありがとうございます。おかげさまで私たちのロシア滞在はたいへん楽しく有益なものでした。ぜひ日本へもいらっしゃって下さい。お元気で。<br></div>
                     </div>
                 </div>
-                <div class="text__field schedule">
-                    <h2 class="text__subname">6月2日（火）</h2>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテル食堂にて 朝食
-                        </div>
-                        <div class="schedule__time">
-                            9:00-9:45
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテル出発
-                        </div>
-                        <div class="schedule__time">
-                            9:45
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            日本代表団歓迎会(産業別・団体別)
-                        </div>
-                        <div class="schedule__time">
-                            11:30-13:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            レストランARAGVIEにて 昼食
-                        </div>
-                        <div class="schedule__time">
 
+                <div class="text">
+                    <h1 class="text__number">テキスト ２</h1>
+                    <h1 class="text__name">日本商工会議所代表団ロシア滞在日程</h1>
+                    <div class="text__field schedule">
+                        <h2 class="text__subname">６月１日（月）</h2>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                シェレメーチエボ空港到着
+                            </div>
+                            <div class="schedule__time">
+                            </div>
                         </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            (グルジア料理)
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                (JL282便)
+                            </div>
+                            <div class="schedule__time">
+                                11:00
+                            </div>
                         </div>
-                        <div class="schedule__time">
-                            14:00-15:00
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                市内へ移動
+                            </div>
+                            <div class="schedule__time">
+                                11:30-12:30
+                            </div>
                         </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            電子工学研究所訪問
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                COSMOSホテルにて チェックイン
+                            </div>
+                            <div class="schedule__time">
+                                12:30-13:00
+                            </div>
                         </div>
-                        <div class="schedule__time">
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                休憩
+                            </div>
+                            <div class="schedule__time">
+                                13:00-14:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                ホテル食堂にて 昼食
+                            </div>
+                            <div class="schedule__time">
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            所長と懇談
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                滞在日程打ち合わせ
+                            </div>
+                            <div class="schedule__time">
+                                14:00-15:00
+                            </div>
                         </div>
-                        <div class="schedule__time">
-                            15:30-17:30
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                市內觀光
+                            </div>
+                            <div class="schedule__time">
+                                15:00-18:00
+                            </div>
                         </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            所内見学
-                        </div>
-                        <div class="schedule__time">
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                日本代表団歓迎レセプション
+                            </div>
+                            <div class="schedule__time">
 
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                (モスクワ市長主催。市役所)
+                            </div>
+                            <div class="schedule__time">
+                                18:00-20:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                自由行動
+                            </div>
+                            <div class="schedule__time">
+                                20:00
+                            </div>
                         </div>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            新聞記者会見
+                    <div class="text__field schedule">
+                        <h2 class="text__subname">６月２日（火）</h2>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテル食堂にて 朝食
+                            </div>
+                            <div class="schedule__time">
+                                9:00-9:45
+                            </div>
                         </div>
-                        <div class="schedule__time">
-                            17:45-18:30
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテル出発
+                            </div>
+                            <div class="schedule__time">
+                                9:45
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                日本代表団歓迎会(産業別・団体別)
+                            </div>
+                            <div class="schedule__time">
+                                11:30-13:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                レストランARAGVIEにて 昼食
+                            </div>
+                            <div class="schedule__time">
+
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                (グルジア料理)
+                            </div>
+                            <div class="schedule__time">
+                                14:00-15:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                電子工学研究所訪問
+                            </div>
+                            <div class="schedule__time">
+
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                所長と懇談
+                            </div>
+                            <div class="schedule__time">
+                                15:30-17:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                所内見学
+                            </div>
+                            <div class="schedule__time">
+
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                新聞記者会見
+                            </div>
+                            <div class="schedule__time">
+                                17:45-18:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテルにて 夕食
+                            </div>
+                            <div class="schedule__time">
+                                18:45-19:15
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                観劇
+                            </div>
+                            <div class="schedule__time">
+                                19:30-22:30
+                            </div>
                         </div>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテルにて 夕食
+                    <div class="text__field schedule">
+                        <h2 class="text__subname">６月３日（水）</h2>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテル食堂にて 朝食
+                            </div>
+                            <div class="schedule__time">
+                                8:30-9:00
+                            </div>
                         </div>
-                        <div class="schedule__time">
-                            18:45-19:15
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテル出発
+                            </div>
+                            <div class="schedule__time">
+                                9:15
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ロシア商工会議所訪問
+                            </div>
+                            <div class="schedule__time">
+                                9:30-10:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                モスクワ取引所訪問。 所長と会見
+                            </div>
+                            <div class="schedule__time">
+
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                指導部と会談・交渉
+                            </div>
+                            <div class="schedule__time">
+                                10:45-12:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                契約書 調印式
+                            </div>
+                            <div class="schedule__time">
+                                12:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ロシア商工会議所会頭主催昼食会
+                            </div>
+                            <div class="schedule__time">
+                                13:00-14:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                医療機械工場見学、
+                            </div>
+                            <div class="schedule__time">
+
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                同工場労働組合と交流会
+                            </div>
+                            <div class="schedule__time">
+                                14:30-15:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ロシア経団連会長と会見
+                            </div>
+                            <div class="schedule__time">
+                                16:15-17:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                自由時間、ショッピング
+                            </div>
+                            <div class="schedule__time">
+                                18:00-19:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテルの食堂にて 夕食
+                            </div>
+                            <div class="schedule__time">
+                                19:30-20:15
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテル出発
+                            </div>
+                            <div class="schedule__time">
+                                20:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ペテルブルグへ出発（レニングラードスキー駅）
+                            </div>
+                            <div class="schedule__time">
+                                22:00
+                            </div>
                         </div>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            観劇
+                    <div class="text__field schedule">
+                        <h2 class="text__subname">６月４日（木）</h2>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ペテルブルグ着
+                            </div>
+                            <div class="schedule__time">
+                                7:00
+                            </div>
                         </div>
-                        <div class="schedule__time">
-                            19:30-22:30
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテルにて チェックイン
+                            </div>
+                            <div class="schedule__time">
+                                7:35-8:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ホテルの食堂にて朝食
+                            </div>
+                            <div class="schedule__time">
+                                8:15-9:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                市長を表敬訪問
+                            </div>
+                            <div class="schedule__time">
+                                9:30-10:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit" style="border-bottom: 0;">
+                            <div class="schedule__point">
+                                ツアー「ペテルブルグを訪ねて」
+                            </div>
+                            <div class="schedule__time">
+
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                （名所旧跡めぐり）
+                            </div>
+                            <div class="schedule__time">
+                                10:30-13:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ベテルゴッフ・ドライブ
+                            </div>
+                            <div class="schedule__time">
+                                14:30-17:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ネバ川遊覧
+                            </div>
+                            <div class="schedule__time">
+                                17:30-18:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                プーシキン市遊覧
+                            </div>
+                            <div class="schedule__time">
+                                18:30-21:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                歓迎会 (ペテルブルグ市役所にて)
+                            </div>
+                            <div class="schedule__time">
+                                21:30-22:30
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                出発準備
+                            </div>
+                            <div class="schedule__time">
+                                22:30-23:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                ブルコボ空港へ出発
+                            </div>
+                            <div class="schedule__time">
+                                23:00
+                            </div>
+                        </div>
+                        <div class="schedule__unit">
+                            <div class="schedule__point">
+                                SU584便でモスクワへ出発
+                            </div>
+                            <div class="schedule__time">
+                                01:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <h1 class="text__number">テキスト ３</h1>
+                    <h1 class="text__name">空港にて</h1>
+                    <h1 class="text__name">１．出入国管理</h1>
+                    <div class="text__field dialogue">
+                        <div class="dialogue__replica bg-blue"><b>A：</b> パスポートを見せて下さい。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> どうぞ。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> ビザ発給機関はナホトカ総領事館ですね。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> はい、そうです。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 日本へは今度がはじめてですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> いいえ、3回目です。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 日本には長くご滞在になりますか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> いいえ、査証してある通り1週間です。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 日本へ来られた目的は何ですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> 代表団員として、 視察の目的で来ました。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> ありがとうございます。 パスポートをどうぞ。<br></div>
+                    </div>
+                    <h1 class="text__name">２．税関検査</h1>
+                    <div class="text__field dialogue">
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 何か課税品をお持ちですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> どんなものが課税品か知らないので、ちょっと荷物をみて下さい。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 輸入禁制品はありませんか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> ありません。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 何か申告なさるものがありますか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> 何もありません。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> このスーツケースには何が入っていますか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> 化粧道具とか身の回りの品だけです。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> たばこに対して税を払わなければなりませんね。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> どこで払えばいいですか。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 申告書を作って、あちらの窓口へ持っていき、 そこで税金を払います。
+                            その際領収証を受け取って下さい。<br></div>
+                    </div>
+                    <h1 class="text__name">３．出発のチェックインはどこ?</h1>
+                    <div class="text__field dialogue">
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 私たちの乗る飛行機は何便ですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> モスクワ行きJALの173便で、 搭乗開始のアナウンスがもうありました。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 出発のチェックインはどこでしていますか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> 7番カウンターです。 お荷物をカウンターまでお運び下さい。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 荷物は何キロまで持ち込めますか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> エコノミークラスでございますので、 手荷物は20まで携行できまして、
+                            エクセスは1キロあたり20ドルでございます。<br></div>
+
+                    </div>
+                    <h1 class="text__name">４. JALのフロントで</h1>
+                    <div class="text__field dialogue">
+                        <div class="dialogue__replica bg-blue"><b>A：</b> JALのフロントはどこですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> こちらでございます。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> 私の予約を確認したいんですが...<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> どちらさまでいらっしゃいますか。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> ロシアのイワノフです。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> はい、だいじょうぶです。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> ロンドン行きJALの158便のチェックインはどこですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> 7番のカウンターでしております。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> チェックインは何時からですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> もうすぐ始まると思います。<br></div>
+
+                        <div class="dialogue__replica bg-blue"><b>A：</b> この便は予定どおりですか。<br></div>
+
+                        <div class="dialogue__replica"><b>B：</b> はい、遅れておりません。<br></div>
+
+                        <div class="dialogue__replica"><b>スピーカー：</b> ご案内申し上げます。 JAL158便ロンドン行きにご搭乗のお客様は5番ゲートまでお越し下さい。<br>
                         </div>
                     </div>
                 </div>
-                <div class="text__field schedule">
-                    <h2 class="text__subname">6月3日（水）</h2>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテル食堂にて 朝食
-                        </div>
-                        <div class="schedule__time">
-                            8:30-9:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテル出発
-                        </div>
-                        <div class="schedule__time">
-                            9:15
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ロシア商工会議所訪問
-                        </div>
-                        <div class="schedule__time">
-                            9:30-10:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            モスクワ取引所訪問。 所長と会見
-                        </div>
-                        <div class="schedule__time">
 
-                        </div>
+                <div class="text">
+                    <h1 class="text__number">テキスト 4</h1>
+                    <h1 class="text__name">ホテルにて</h1>
+                    <div class="text__field">
+                        <p class="text__paragraph">皆様がお泊まりになるホテルはCOSMOSといいます。モスクワの中心部からあまり違くない所にあり、最近建てられたものです。</p>
+                        <p class="text__paragraph">
+                            もう着きました。お忘れ物のないようにお願いします。バスをお降り下さって、ロビーでお待ちください。チェックインしますので、皆様のパスポートはしばらくお預かりしています。</p>
+                        <p class="text__paragraph">それからロビーでお配りいたします宿泊カードにお名前と生年月日と国籍、それから滞在期間と目的地をお書き込み下さい。 </p>
+                        <p class="text__paragraph">これからフロントで手続きいたします。</p>
+                        <p style="text-align: center;">・・・・・・・・・・</p>
+                        <p class="text__paragraph">ちょっとお知らせします。</p>
+                        <p class="text__paragraph">荷物はお部屋までボーダーがお持ちしますので、ご心配なく。大きな荷物はクロークルームにお預けになって下さい。</p>
+                        <p class="text__paragraph">外出するときは、鍵をフロントにお預け下さい。</p>
+                        <p class="text__paragraph">電報や郵便物はフロントでお預かりしております。</p>
+                        <p class="text__paragraph">
+                            チェックアウトは明日の昼12時ですから、その時までに鍵をお返し下さい。昼食のあと13時にホテルを出発いたしますから、お忘れにならないようにお願いします。</p>
+                        <p class="text__paragraph">両替は1階のロビーの右側にあるエリーム銀行支店でできます。左側にはサービスビューローがあります。</p>
+                        <p class="text__paragraph">朝食は、2階のレストランで7時から8時までの間にお取り下さい。</p>
+                        <p class="text__paragraph">今夜の予定を申し上げます。1時間半後、9時ちょうどにここに集まって下さい。9時10分にホテルを出発いたします。</p>
+                        <p class="text__paragraph">
+                            何かご質問とか分からないことがおありでしたら、どうぞご遠慮なく私にお聞きになってください。私の部屋は319号室で電話番号は58-319でございます。</p>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            指導部と会談・交渉
-                        </div>
-                        <div class="schedule__time">
-                            10:45-12:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            契約書 調印式
-                        </div>
-                        <div class="schedule__time">
-                            12:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ロシア商工会議所会頭主催昼食会
-                        </div>
-                        <div class="schedule__time">
-                            13:00-14:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            医療機械工場見学、
-                        </div>
-                        <div class="schedule__time">
+                </div>
 
+                <div class="excercise">
+                    <h1 class="section__name">旅行客からの質問・依頼</h1>
+                    <div class="excercise__block">
+                        <h2 class="excercise__subtitle">1. フロントで</h2>
+                        <ul class="excercise__list">
+                            <li class="excercise__point bg-blue">1) 部屋がとってあるはずです。バス付きのツインでしたが...</li>
+                            <li class="excercise__point">2) 部屋代はおいくらですか。</li>
+                            <li class="excercise__point bg-blue">3) それは税金込みですか。あるいは別ですか。</li>
+                            <li class="excercise__point">4) チェックアウトは何時ですか。</li>
+                        </ul>
+                    </div>
+                    <div class="excercise__block">
+                        <h2 class="excercise__subtitle">2. フロア係りに</h2>
+                        <ul class="excercise__list">
+                            <li class="excercise__point bg-blue">1) 市内へ電話をかけたいのですが。</li>
+                            <li class="excercise__point">2) 朝食を部屋に持って来てほしいのですが。</li>
+                            <li class="excercise__point bg-blue">3) 洗濯に出したいものがあります。</li>
+                            <li class="excercise__point">4) これをプレスにだしてください。</li>
+                            <li class="excercise__point bg-blue">5) いつ出来上がりますか。</li>
+                            <li class="excercise__point">6) トランクを預けたいのですが。</li>
+                            <li class="excercise__point bg-blue">7) バスルームのお湯が出ません。</li>
+                            <li class="excercise__point">8) ドアの鍵がかかりません。</li>
+                            <li class="excercise__point bg-blue">9) 部屋にキーを置き忘れました。</li>
+                            <li class="excercise__point">10) 私にメッセージがありませんか。 </li>
+                            <li class="excercise__point bg-blue">11) だれか私をたずねて来ませんでしたか。</li>
+                        </ul>
+                    </div>
+                    <div class="excercise__block">
+                        <h2 class="excercise__subtitle">3. 両替所で</h2>
+                        <ul class="excercise__list">
+                            <li class="excercise__point bg-blue">1) 外貨はどこで替えられますか。</li>
+                            <li class="excercise__point">2) 両替はどこでやってもらえますか。</li>
+                            <li class="excercise__point bg-blue">3) ドルを円に替えてもらいたいのですが。</li>
+                            <li class="excercise__point">4) 今円とドルのレートはどうなっていますか。</li>
+                            <li class="excercise__point bg-blue">5) レートはどうなっていますか。</li>
+                            <li class="excercise__point">6) ドルにして下さい。</li>
+                            <li class="excercise__point bg-blue">7) ドルに戻して下さい。</li>
+                            <li class="excercise__point">8) 旅行小切手100ドルをルーブルに替えて下さい。</li>
+                        </ul>
+                    </div>
+                    <div class="excercise__block">
+                        <h2 class="excercise__subtitle">4. 観光案内所で</h2>
+                        <ul class="excercise__list">
+                            <li class="excercise__point bg-blue">1) 飛行機の時刻表を見せて下さい。</li>
+                            <li class="excercise__point">2) パリまでの航空券が欲しいのですが。</li>
+                            <li class="excercise__point bg-blue">3) 市内観光に行きたいのですが。</li>
+                            <li class="excercise__point">4) 市内見学はいつできますか。</li>
+                            <li class="excercise__point bg-blue">5) ペテルゴッフの見学はできますか。</li>
+                            <li class="excercise__point">6) ナイト・ツアーもありますか。</li>
+                            <li class="excercise__point bg-blue">7) 日本語の話せるガイドをお願いします。 </li>
+                            <li class="excercise__point">8) 劇場の出し物はどこで分かりますか。</li>
+                            <li class="excercise__point bg-blue">9) 音楽会の切符を予約したいのですが。</li>
+                            <li class="excercise__point">10) タクシーを予約したいのですが。</li>
+                            <li class="excercise__point bg-blue">11) タクシーにかさを忘れました。どこへ問い合わせたらいいでしょうか。</li>
+                            <li class="excercise__point">12) 市内見学コースに名所旧跡が入っていますか。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lexica">
+                <div class="excercise">
+                    <a href="lexica1.html">
+                        <div class="section__name">単語</div>
+                    </a>
+                    <a href="lexica1.html" target="_blank">
+                        <div class="lexica-button">Слова спрятались здесь</div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="listening">
+                <div class="section__name">聞く練習</div>
+                <div class="excercise" id="1">
+                    <div class="excercise__header">
+                        <div class="excercise__task">
+                            <p><b>1.(1)</b><br>a) テープを聞きながら、ボースのところで訳しなさい。</p>
+                            <p>b) 終りまで聞いてから、言葉の出た　　のとおりに</p>
                         </div>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            同工場労働組合と交流会
-                        </div>
-                        <div class="schedule__time">
-                            14:30-15:30
-                        </div>
+                    <div class="excercise__block with-litera">
+                        <div class="excercise__block-litera">A</div>
+                        <p>1) パースポート、ポーター、クロークルーム、カウンター、フロント、エコノミー・クラス、ツイン・ベッド</p>
+                        <p>2) 領事館、国籍、 視察、 発給機関、 課税品、 滞在、 搭乗</p>
+                        <p>3) 申告書、 輸入禁制品、 両替、 為替相場、 領収証、 宿泊、 日程</p>
                     </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ロシア経団連会長と会見
+                    <div class="excercise__block with-litera two-columns">
+                        <div class="excercise__block-litera">B</div>
+                        <div class="excercise__column">
+                            <p class="column-number"><b>1)</b></p>
+                            <p>ロシア滞在日程</p>
+                            <p>視察の目的で来る</p>
+                            <p>申告書に記入する</p>
+                            <p>税金を払う</p>
+                            <p>領収書を受ける</p>
+                            <p>搭乗開始のアナウンス</p>
+                            <p>宿泊ｶｰドに書き込む</p>
                         </div>
-                        <div class="schedule__time">
-                            16:15-17:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            自由時間、ショッピング
-                        </div>
-                        <div class="schedule__time">
-                            18:00-19:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテルの食堂にて 夕食
-                        </div>
-                        <div class="schedule__time">
-                            19:30-20:15
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテル出発
-                        </div>
-                        <div class="schedule__time">
-                            20:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ペテルブルグへ出発（レニングラードスキー駅）
-                        </div>
-                        <div class="schedule__time">
-                            22:00
+                        <div class="excercise__column">
+                            <p class="column-number"><b>2)</b></p>
+                            <p>日程の打ち合わせをする</p>
+                            <p>印象に残る</p>
+                            <p>多少変更する</p>
+                            <p>パスポートを用意する</p>
+                            <p>鍵を預ける</p>
+                            <p>円をドルに両替する</p>
                         </div>
                     </div>
                 </div>
-                <div class="text__field schedule">
-                    <h2 class="text__subname">6月4日（木）</h2>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ペテルブルグ着
-                        </div>
-                        <div class="schedule__time">
-                            7:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテルにて チェックイン
-                        </div>
-                        <div class="schedule__time">
-                            7:35-8:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ホテルの食堂にて朝食
-                        </div>
-                        <div class="schedule__time">
-                            8:15-9:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            市長を表敬訪問
-                        </div>
-                        <div class="schedule__time">
-                            9:30-10:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit" style="border-bottom: 0;">
-                        <div class="schedule__point">
-                            ツアー「ペテルブルグを訪ねて」
-                        </div>
-                        <div class="schedule__time">
 
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            （名所旧跡めぐり）
-                        </div>
-                        <div class="schedule__time">
-                            10:30-13:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ベテルゴッフ・ドライブ
-                        </div>
-                        <div class="schedule__time">
-                            14:30-17:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ネバ川遊覧
-                        </div>
-                        <div class="schedule__time">
-                            17:30-18:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            プーシキン市遊覧
-                        </div>
-                        <div class="schedule__time">
-                            18:30-21:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            歓迎会 (ペテルブルグ市役所にて)
-                        </div>
-                        <div class="schedule__time">
-                            21:30-22:30
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            出発準備
-                        </div>
-                        <div class="schedule__time">
-                            22:30-23:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            ブルコボ空港へ出発
-                        </div>
-                        <div class="schedule__time">
-                            23:00
-                        </div>
-                    </div>
-                    <div class="schedule__unit">
-                        <div class="schedule__point">
-                            SU584便でモスクワへ出発
-                        </div>
-                        <div class="schedule__time">
-                            01:00
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text">
-                <h1 class="text__number">テキスト 3</h1>
-                <h1 class="text__name">空港にて</h1>
-                <h1 class="text__name">１．出入国管理</h1>
-                <div class="text__field dialogue">
-                    <div class="dialogue__replica bg-blue"><b>A：</b> パスポートを見せて下さい。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> どうぞ。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> ビザ発給機関はナホトカ総領事館ですね。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> はい、そうです。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 日本へは今度がはじめてですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> いいえ、3回目です。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 日本には長くご滞在になりますか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> いいえ、査証してある通り1週間です。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 日本へ来られた目的は何ですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> 代表団員として、 視察の目的で来ました。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> ありがとうございます。 パスポートをどうぞ。<br></div>
-                </div>
-                <h1 class="text__name">２．税関検査</h1>
-                <div class="text__field dialogue">
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 何か課税品をお持ちですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> どんなものが課税品か知らないので、ちょっと荷物をみて下さい。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 輸入禁制品はありませんか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> ありません。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 何か申告なさるものがありますか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> 何もありません。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> このスーツケースには何が入っていますか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> 化粧道具とか身の回りの品だけです。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> たばこに対して税を払わなければなりませんね。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> どこで払えばいいですか。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 申告書を作って、あちらの窓口へ持っていき、 そこで税金を払います。
-                        その際領収証を受け取って下さい。<br></div>
-                </div>
-                <h1 class="text__name">３．出発のチェックインはどこ?</h1>
-                <div class="text__field dialogue">
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 私たちの乗る飛行機は何便ですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> モスクワ行きJALの173便で、 搭乗開始のアナウンスがもうありました。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 出発のチェックインはどこでしていますか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> 7番カウンターです。 お荷物をカウンターまでお運び下さい。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 荷物は何キロまで持ち込めますか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> エコノミークラスでございますので、 手荷物は20まで携行できまして、
-                        エクセスは1キロあたり20ドルでございます。<br></div>
-
-                </div>
-                <h1 class="text__name">４. JALのフロントで</h1>
-                <div class="text__field dialogue">
-                    <div class="dialogue__replica bg-blue"><b>A：</b> JALのフロントはどこですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> こちらでございます。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> 私の予約を確認したいんですが...<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> どちらさまでいらっしゃいますか。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> ロシアのイワノフです。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> はい、だいじょうぶです。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> ロンドン行きJALの158便のチェックインはどこですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> 7番のカウンターでしております。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> チェックインは何時からですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> もうすぐ始まると思います。<br></div>
-
-                    <div class="dialogue__replica bg-blue"><b>A：</b> この便は予定どおりですか。<br></div>
-
-                    <div class="dialogue__replica"><b>B：</b> はい、遅れておりません。<br></div>
-
-                    <div class="dialogue__replica"><b>スピーカー：</b> ご案内申し上げます。 JAL158便ロンドン行きにご搭乗のお客様は5番ゲートまでお越し下さい。<br>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text">
-                <h1 class="text__number">テキスト 4</h1>
-                <h1 class="text__name">ホテルにて</h1>
-                <div class="text__field">
-                    <p class="text__paragraph">皆様がお泊まりになるホテルはCOSMOSといいます。モスクワの中心部からあまり違くない所にあり、最近建てられたものです。</p>
-                    <p class="text__paragraph">
-                        もう着きました。お忘れ物のないようにお願いします。バスをお降り下さって、ロビーでお待ちください。チェックインしますので、皆様のパスポートはしばらくお預かりしています。</p>
-                    <p class="text__paragraph">それからロビーでお配りいたします宿泊カードにお名前と生年月日と国籍、それから滞在期間と目的地をお書き込み下さい。 </p>
-                    <p class="text__paragraph">これからフロントで手続きいたします。</p>
-                    <p style="text-align: center;">・・・・・・・・・・</p>
-                    <p class="text__paragraph">ちょっとお知らせします。</p>
-                    <p class="text__paragraph">荷物はお部屋までボーダーがお持ちしますので、ご心配なく。大きな荷物はクロークルームにお預けになって下さい。</p>
-                    <p class="text__paragraph">外出するときは、鍵をフロントにお預け下さい。</p>
-                    <p class="text__paragraph">電報や郵便物はフロントでお預かりしております。</p>
-                    <p class="text__paragraph">
-                        チェックアウトは明日の昼12時ですから、その時までに鍵をお返し下さい。昼食のあと13時にホテルを出発いたしますから、お忘れにならないようにお願いします。</p>
-                    <p class="text__paragraph">両替は1階のロビーの右側にあるエリーム銀行支店でできます。左側にはサービスビューローがあります。</p>
-                    <p class="text__paragraph">朝食は、2階のレストランで7時から8時までの間にお取り下さい。</p>
-                    <p class="text__paragraph">今夜の予定を申し上げます。1時間半後、9時ちょうどにここに集まって下さい。9時10分にホテルを出発いたします。</p>
-                    <p class="text__paragraph">
-                        何かご質問とか分からないことがおありでしたら、どうぞご遠慮なく私にお聞きになってください。私の部屋は319号室で電話番号は58-319でございます。</p>
-                </div>
-            </div>
-
-            <div class="excercise">
-                <h1 class="excercise__name">旅行客からの質問・依頼</h1>
-                <div class="excercise__block">
-                    <h2 class="excercise__subtitle">1. フロントで</h2>
-                    <ul class="excercise__list">
-                        <li class="excercise__point bg-blue">1) 部屋がとってあるはずです。バス付きのツインでしたが...</li>
-                        <li class="excercise__point">2) 部屋代はおいくらですか。</li>
-                        <li class="excercise__point bg-blue">3) それは税金込みですか。あるいは別ですか。</li>
-                        <li class="excercise__point">4) チェックアウトは何時ですか。</li>
-                    </ul>
-                </div>
-                <div class="excercise__block">
-                    <h2 class="excercise__subtitle">2. フロア係りに</h2>
-                    <ul class="excercise__list">
-                        <li class="excercise__point bg-blue">1) 市内へ電話をかけたいのですが。</li>
-                        <li class="excercise__point">2) 朝食を部屋に持って来てほしいのですが。</li>
-                        <li class="excercise__point bg-blue">3) 洗濯に出したいものがあります。</li>
-                        <li class="excercise__point">4) これをプレスにだしてください。</li>
-                        <li class="excercise__point bg-blue">5) いつ出来上がりますか。</li>
-                        <li class="excercise__point">6) トランクを預けたいのですが。</li>
-                        <li class="excercise__point bg-blue">7) バスルームのお湯が出ません。</li>
-                        <li class="excercise__point">8) ドアの鍵がかかりません。</li>
-                        <li class="excercise__point bg-blue">9) 部屋にキーを置き忘れました。</li>
-                        <li class="excercise__point">10) 私にメッセージがありませんか。 </li>
-                        <li class="excercise__point bg-blue">11) だれか私をたずねて来ませんでしたか。</li>
-                    </ul>
-                </div>
-                <div class="excercise__block">
-                    <h2 class="excercise__subtitle">3. 両替所で</h2>
-                    <ul class="excercise__list">
-                        <li class="excercise__point bg-blue">1) 外貨はどこで替えられますか。</li>
-                        <li class="excercise__point">2) 両替はどこでやってもらえますか。</li>
-                        <li class="excercise__point bg-blue">3) ドルを円に替えてもらいたいのですが。</li>
-                        <li class="excercise__point">4) 今円とドルのレートはどうなっていますか。</li>
-                        <li class="excercise__point bg-blue">5) レートはどうなっていますか。</li>
-                        <li class="excercise__point">6) ドルにして下さい。</li>
-                        <li class="excercise__point bg-blue">7) ドルに戻して下さい。</li>
-                        <li class="excercise__point">8) 旅行小切手100ドルをルーブルに替えて下さい。</li>
-                    </ul>
-                </div>
-                <div class="excercise__block">
-                    <h2 class="excercise__subtitle">4. 観光案内所で</h2>
-                    <ul class="excercise__list">
-                        <li class="excercise__point bg-blue">1) 飛行機の時刻表を見せて下さい。</li>
-                        <li class="excercise__point">2) パリまでの航空券が欲しいのですが。</li>
-                        <li class="excercise__point bg-blue">3) 市内観光に行きたいのですが。</li>
-                        <li class="excercise__point">4) 市内見学はいつできますか。</li>
-                        <li class="excercise__point bg-blue">5) ペテルゴッフの見学はできますか。</li>
-                        <li class="excercise__point">6) ナイト・ツアーもありますか。</li>
-                        <li class="excercise__point bg-blue">7) 日本語の話せるガイドをお願いします。 </li>
-                        <li class="excercise__point">8) 劇場の出し物はどこで分かりますか。</li>
-                        <li class="excercise__point bg-blue">9) 音楽会の切符を予約したいのですが。</li>
-                        <li class="excercise__point">10) タクシーを予約したいのですが。</li>
-                        <li class="excercise__point bg-blue">11) タクシーにかさを忘れました。どこへ問い合わせたらいいでしょうか。</li>
-                        <li class="excercise__point">12) 市内見学コースに名所旧跡が入っていますか。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="excercise">
-                <a href="lexica1.html">
-                    <h1 class="section" style="margin-bottom: 10px;">単語</h1>
-                </a>
-                <a href="lexica1.html" target="_blank">
-                    <div class="lexica-button">Слова спрятались здесь</div>
-                </a>
-            </div>
-
+            </section>
 
         </div>
     </main>

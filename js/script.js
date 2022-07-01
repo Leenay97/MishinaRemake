@@ -3,6 +3,7 @@ let lessonsButton = document.querySelector('.lexics');
 let textsButton = document.querySelector('.texts');
 let menuPoints = document.querySelectorAll('.header__menu-point');
 let header = document.querySelector('.header');
+let search = document.querySelector('.search__text');
 
 
 menuPoints.forEach((item) => {
@@ -36,4 +37,35 @@ window.addEventListener('scroll', () => {
     }
 
     lastScroll = scrollPosition();
+})
+
+//search menu
+search.addEventListener('keypress', (e) => {
+    let key = window.event.keyCode;
+
+    if (key === 13) {
+        console.log('dsas')
+            window.open(`../lesson1.html#${search.value}`, '_self');
+            let searchDestination = document.getElementById(`${search.value}`);
+            searchDestination.scrollIntoView();
+            search.value = '';
+        return false;
+    } else {
+        return true;
+    }
+})
+
+
+//menu button
+
+let menuButton = document.querySelector('.menu__button');
+let upStr = document.querySelector('.burger__up');
+let downStr = document.querySelector('.burger__down');
+let midStr = document.querySelector('.burger__mid');
+
+menuButton.addEventListener('click', (e)=>{
+    console.log('ss')
+    midStr.classList.toggle('burger__hidden');
+    upStr.classList.toggle('burger__up_rotated');
+    downStr.classList.toggle('burger__down_rotated');
 })
