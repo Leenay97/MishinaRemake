@@ -223,7 +223,7 @@ main .fixed-container {
     background-color: #ffffff;
     position: absolute;
     top: 3px;
-    transition: transform .1s linear;
+    transition: all .1s linear;
 }
 .burger__mid {
     height: 4px;
@@ -231,7 +231,7 @@ main .fixed-container {
     background-color: #ffffff;
     position: absolute;
     top: 12px;
-    transition: transform .1s linear;
+    transition: all .1s linear;
 }
 .burger__down {
     height: 4px;
@@ -239,7 +239,7 @@ main .fixed-container {
     background-color: #ffffff;
     position: absolute;
     top: 21px;
-    transition: transform .1s linear;
+    transition: all .1s linear;
 }
 .burger__hidden {
     transform: scaleY(0);

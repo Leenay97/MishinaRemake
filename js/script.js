@@ -45,13 +45,15 @@ search.addEventListener('keypress', (e) => {
 
     if (key === 13) {
         console.log('dsas')
+        if (search.value == 1){
             window.open(`https://leenay97.github.io/MishinaRemake/lesson1.html#${search.value}`, '_self');
             let searchDestination = document.getElementById(`${search.value}`);
             searchDestination.scrollIntoView();
             search.value = '';
-        return false;
-    } else {
-        return true;
+        }
+    //     return false;
+    // } else {
+    //     return true;
     }
 })
 
