@@ -242,19 +242,19 @@ main .fixed-container {
     transition: all .1s linear;
 }
 .burger__hidden {
-    transform: scaleY(0);
     -webkit-transform: scaleY(0);
     -ms-transform: scaleY(0);
+    transform: scaleY(0);
 }
 .burger__up_rotated {
-    transform: rotateZ(45deg) translate(5px, 8px) scaleX(110%);
     -webkit-transform: rotateZ(45deg) translate(5px, 8px) scaleX(110%);
     -ms-transform: rotateZ(45deg) translate(5px, 8px) scaleX(110%);
+    transform: rotateZ(45deg) translate(5px, 8px) scaleX(110%);
 }
 .burger__down_rotated {
-    transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
     -webkit-transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
     -ms-transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
+    transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
 }
 
 @media screen and (max-width: 1000px) {
