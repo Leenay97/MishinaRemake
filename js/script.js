@@ -64,7 +64,6 @@ let downStr = document.querySelector('.burger__down');
 let midStr = document.querySelector('.burger__mid');
 
 menuButton.addEventListener('click', (e)=>{
-    console.log('ss')
     midStr.classList.toggle('burger__hidden');
     upStr.classList.toggle('burger__up_rotated');
     downStr.classList.toggle('burger__down_rotated');
