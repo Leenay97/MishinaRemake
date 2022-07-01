@@ -1,7 +1,6 @@
 main .fixed-container {
     padding: 20px 60px;
 }
-
 .section__name {
     text-align: center;
     font-size: 26px;
@@ -9,17 +8,12 @@ main .fixed-container {
     margin-bottom: 20px;
     color: #4592bf76;
 }
-
 .bg-blue {
     background-color: #4592bf16;
 }
 .bg-orange {
     background-color: #e3bb6f16;
 }
-/* .text {
-    margin-bottom: 60px;
-} */
-
 .text::after {
     content: '';
     display: block;
@@ -28,7 +22,6 @@ main .fixed-container {
     border-bottom: 2px solid #4592bf36;
     margin: 40px auto;
 }
-
 .lesson-title {
     margin: 0 auto;
     display: flex;
@@ -73,7 +66,6 @@ main .fixed-container {
     line-height: 30px;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
-
 .text__subname {
     font-size: 20px;
     font-weight: 600;
@@ -82,7 +74,6 @@ main .fixed-container {
     margin: 20px;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
-
 .excercise::after {
     content: '';
     display: block;
@@ -91,32 +82,26 @@ main .fixed-container {
     border-bottom: 2px solid #4592bf36;
     margin: 40px auto;
 }
-
 .excercise__header {
-
     position: relative;
 }
-
 .excercise__number {
     width: 80px;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
 }
-
 .excercise__task {
     line-height: 25px;
     margin-bottom: 20px;
     text-align: center;
     font-weight: 500;
 }
-
 .excercise__block {
     margin-bottom: 40px;
     position: relative;
     line-height: 25px;
 }
-
 .excercise__block p {
     margin-bottom: 20px;
 }
@@ -128,7 +113,6 @@ main .fixed-container {
     color: #4592bf76;
     font-size: 22px;
 }
-
 .two-columns {
     display: flex;
     flex-direction: row;
@@ -144,52 +128,42 @@ main .fixed-container {
 .excercise__block p:nth-child(2n) {
     background-color: #4592bf16;
 }
-
 .excercise__name {
     font-size: 22px;
     color: #3e3e3e;
     text-align: center;
     margin-bottom: 40px;
     /* font-family: Arial, Helvetica, sans-serif; */
-
 }
-
 .excercise__subtitle {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-
 .excercise__list {
     list-style-type: none;
 }
-
 .excercise__point {
     line-height: 30px;
     list-style-type: none;
     padding: 5px 20px;
 }
-
 /* .excercise__point:last-child {
     border-bottom: 2px solid #4592bf26;
 } */
-
 .text__field {
     line-height: 30px;
     margin-bottom: 20px;
     font-size: 14px;
 }
-
 .text__paragraph {
     line-height: 30px;
     text-indent: 40px;
     margin-bottom: 5px;
 }
-
 .dialogue__replica {
     padding: 0 20px 20px 20px;
 }
-
 .schedule {
     background-color: #f1eecb7c;
     padding: 20px 0;
@@ -199,7 +173,6 @@ main .fixed-container {
     background-size: 20px 10px, 80px 80px;
     background-position: 5px 5px, bottom right;
 }
-
 .schedule__unit {
     display: flex;
     flex-direction: row;
@@ -211,7 +184,6 @@ main .fixed-container {
 .schedule__unit:last-child {
     border: 0;
 }
-
 .schedule__point {
     width: 50%;
     text-align: center;
@@ -222,7 +194,6 @@ main .fixed-container {
     text-align: center;
     padding: 0 20px;
 }
-
 .lexica-button {
     margin: 10px auto;
     width: 40%;
@@ -232,11 +203,9 @@ main .fixed-container {
     height: 40px;
     padding: 10px;
 }
-
 .with-litera {
     padding-left: 30px;
 }
-
 @media screen and (max-width: 750px) { 
     main .fixed-container {
         padding: 20px;
