@@ -211,34 +211,37 @@ main .fixed-container {
 
 /* BURGER */
 .menu__button {
-    height: 30px;
+    height: 25px;
     width: 30px;
     margin-left: 10px;
     position: relative;
     display: none;
+    transition: all .2s linear;
+    border-radius: 2px;
+    overflow: hidden;
 }
 .burger__up {
-    height: 4px;
+    height: 5px;
     width: 30px;
     background-color: #ffffff;
     position: absolute;
-    top: 3px;
+    top: 0px;
     transition: all .1s linear;
 }
 .burger__mid {
-    height: 4px;
+    height: 5px;
     width: 30px;
     background-color: #ffffff;
     position: absolute;
-    top: 12px;
+    top: 10px;
     transition: all .1s linear;
 }
 .burger__down {
-    height: 4px;
+    height: 5px;
     width: 30px;
     background-color: #ffffff;
     position: absolute;
-    top: 21px;
+    top: 20px;
     transition: all .1s linear;
 }
 .burger__hidden {
@@ -255,6 +258,15 @@ main .fixed-container {
     -webkit-transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
     -ms-transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
     transform: rotateZ(-45deg) translate(5px, -8px) scaleX(110%);
+}
+
+.burger-alt {
+    -webkit-transform: rotateZ(135deg);
+    -ms-transform: rotateZ(135deg);
+    transform: rotateZ(135deg);
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0.45;
 }
 
 @media screen and (max-width: 1000px) {
@@ -286,6 +298,8 @@ main .fixed-container {
         font-size: 18px;
     }
     .search__text {
+        all: unset;
+        background-color: #ffffff;
         height: 20px;
         font-size: 18px;
         width: 30px;
@@ -315,5 +329,8 @@ main .fixed-container {
     }
     .menu__button {
         display: block;
+    }
+    .search {
+        margin-right: 10px;
     }
 }
