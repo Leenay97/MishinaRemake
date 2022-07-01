@@ -4,6 +4,7 @@ let textsButton = document.querySelector('.texts');
 let menuPoints = document.querySelectorAll('.header__menu-point');
 let header = document.querySelector('.header');
 let search = document.querySelector('.search__text');
+search.enterKeyHint = 'search'
 
 
 menuPoints.forEach((item) => {
