@@ -2,25 +2,44 @@ let lexicsButton = document.querySelector('.lessons');
 let lessonsButton = document.querySelector('.lexics');
 let textsButton = document.querySelector('.texts');
 let menuPoints = document.querySelectorAll('.header__menu-point');
+let menuList = document.querySelector('.header__menu-list')
 let header = document.querySelector('.header');
 let search = document.querySelector('.search__text');
 search.enterKeyHint = 'search'
+let prevSubmenu;
 
+if (window.innerWidth <= 750) {
+    menuList.classList.add('hidden');
+    console.log('done')
+}
 
 menuPoints.forEach((item) => {
     item.addEventListener('mouseover', function () {
+        if (window.innerWidth <= 750) return;
         console.log(item.children[1])
-        item.children[1].classList.remove('hidden');
+        item.children[1].classList.add('submenu__shown');
     });
     item.addEventListener('mouseout', function () {
+        if (window.innerWidth <= 750) return;
         console.log(item.children[1])
-        item.children[1].classList.add('hidden');
+        item.children[1].classList.remove('submenu__shown');
+    });
+    //onclick
+    item.addEventListener('click', function (e) {
+        if (window.innerWidth > 750) return;
+        menuPoints.forEach((i)=>{
+            if (i == item) return;
+            i.children[1].classList.remove('submenu__shown');
+        })
+        item.children[1].classList.toggle('submenu__shown');
+        prevSubmenu = item;
+        // }
     });
 });
 
 let main = document.querySelector('main');
 
-//hide menu on scroll
+//hide header on scroll
 let scrollBefore = 0;
 let lastScroll = 0;
 const defaultOffset = 200;
@@ -71,4 +90,7 @@ menuButton.addEventListener('click', (e)=>{
     // upStr.classList.toggle('burger__up_rotated');
     // downStr.classList.toggle('burger__down_rotated');
     menuButton.classList.toggle('burger-alt');
+    menuList.classList.toggle('hidden');
+    document.body.classList.toggle('no-scroll');
+    
 })

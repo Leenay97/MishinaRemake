@@ -108,6 +108,12 @@ html, body {
 
 .submenu {
     background-color: #ffffff;
+    display: block;
+    overflow: hidden;
+    max-height: 0px;
+    /* transform: scaleY(0);
+    transform-origin: top; */
+    /* transition: max-height .3s linear; */
 }
 
 .submenu__point {
@@ -126,6 +132,17 @@ html, body {
 .submenu__point a {
     text-decoration: none;
 }
+
+.submenu__shown {
+    display: block;
+    max-height: 400px;
+    /* transform: scaleY(1); */
+    /* transform-origin: top;
+    overflow-y: auto; */
+    transition: max-height .4s linear;
+    margin-bottom: 20px;
+}
+
 .search {
     position: relative;
     height: 25px;
@@ -202,11 +219,6 @@ main .fixed-container {
     width: 100%;
     margin-top: -8px;
     background-image: url('../img/shade-up.png');
-}
-
-
-.hidden {
-    display: none;
 }
 
 /* BURGER */
@@ -324,8 +336,36 @@ main .fixed-container {
 }
 
 @media screen and (max-width: 750px) {
+    .header {
+        overflow-y: visible;
+    }
     .header__menu-list {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    .header__menu-point {
+        color: #000000;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #00000022;
+    }
+    .point-name {
+        font-size: 26px;
+        height: 50px;
+    }
+    .submenu {
+        overflow-y: scroll;
+    }
+    .submenu__point {
+        background: #00000000;
     }
     .menu__button {
         display: block;
@@ -333,4 +373,15 @@ main .fixed-container {
     .search {
         margin-right: 10px;
     }
+}
+
+.hidden {
+    display: none;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
